@@ -2,23 +2,21 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import DataFetching from './components/counter/dataFetching'
+import Counter  from './components/counter/counter';
+import CounterWithPreviousState from './components/counter/counterWithPreviousState';
+import CounterWithObjectState from './components/counter/counterWithObjectState';
+import CounterWithArrayState from './components/counter/counterWithArrayState';
+
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DataFetching />
+      {/* <CounterWithArrayState /> */}
+      {/* <CounterWithObjectState /> */}
+      {/* <CounterWithPreviousState />  */}
+      {/* <Counter /> */}
     </div>
   );
 }
